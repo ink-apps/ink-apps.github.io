@@ -1,1 +1,258 @@
-ink.apps
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ink Apps • Simplify Your Shopify Integrations</title>
+        <!-- Favicon -->
+        <link rel="icon" href="mark.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- AOS Animation Library -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <style>
+            /* CSS Variables */
+            :root {
+                --brand-color: #002c45;
+                --brand-dark: #001f30;
+            }
+
+            /* Reset & Base */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Inter", sans-serif;
+                line-height: 1.6;
+                color: #333;
+            }
+            a {
+                text-decoration: none;
+            }
+            ul {
+                list-style: none;
+            }
+
+            /* Container */
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 0 1rem;
+            }
+
+            /* Header */
+            header {
+                padding: 1rem 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .logo img {
+                max-height: 60px;
+            }
+            nav ul {
+                display: flex;
+                gap: 1.5rem;
+            }
+            nav a {
+                font-weight: 600;
+                color: #555;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: var(--brand-color);
+            }
+
+            /* Hero */
+            .hero {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                min-height: 80vh;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                color: var(--brand-color);
+            }
+            .hero p {
+                font-size: 1.125rem;
+                margin-bottom: 2rem;
+                max-width: 600px;
+            }
+            .btn {
+                display: inline-block;
+                background: var(--brand-color);
+                color: #fff;
+                padding: 0.75rem 1.5rem;
+                border-radius: 4px;
+                font-weight: 600;
+                transition: background 0.3s;
+            }
+            .btn:hover {
+                background: var(--brand-dark);
+            }
+
+            /* Features */
+            .features {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 2rem;
+                margin: 4rem 0;
+            }
+            .feature {
+                padding: 1.5rem;
+                border-radius: 8px;
+                background: #f9f9f9;
+                text-align: center;
+            }
+            .feature h3 {
+                margin-bottom: 0.5rem;
+                font-size: 1.25rem;
+                color: var(--brand-color);
+            }
+
+            /* About */
+            .about {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 2rem;
+                margin-bottom: 4rem;
+            }
+            .about img {
+                flex: 1 1 300px;
+                max-width: 100%;
+                border-radius: 8px;
+            }
+            .about .text {
+                flex: 1 1 300px;
+            }
+
+            /* CTA */
+            .cta {
+                background: var(--brand-color);
+                color: #fff;
+                text-align: center;
+                padding: 3rem 1rem;
+                border-radius: 8px;
+                margin-bottom: 4rem;
+            }
+            .cta h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            /* Footer */
+            footer {
+                text-align: center;
+                padding: 2rem 0;
+                font-size: 0.875rem;
+                color: #777;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="container" data-aos="fade-down">
+            <div class="logo">
+                <img src="logo.png" alt="Ink Apps Logo" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#apps">Our Apps</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="container hero" id="hero">
+            <h1 data-aos="fade-right">Effortless Shopify Integrations</h1>
+            <p data-aos="fade-up">
+                Affordable, easy-to-use plugins connecting your store to Xero
+                and Australia Post, proudly made in Hobart, Tasmania.
+            </p>
+            <a href="#apps" class="btn" data-aos="zoom-in">Explore Our Apps</a>
+        </section>
+
+        <section class="container features" id="apps">
+            <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                <h3>Xero Connector</h3>
+                <p>
+                    Sync orders, invoices and payments to Xero in real time—no
+                    manual exports required.
+                </p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                <h3>Australia Post Connector</h3>
+                <p>
+                    Automate label creation, shipping rates, and tracking
+                    updates directly through your store.
+                </p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                <h3>Simplicity at Its Core</h3>
+                <p>
+                    Install and configure in minutes with zero coding—designed
+                    for non-technical users.
+                </p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="400">
+                <h3>Affordable Pricing</h3>
+                <p>
+                    Powerful tools with transparent plans that scale as your
+                    business grows.
+                </p>
+            </div>
+        </section>
+
+        <section class="container about" id="about">
+            <img
+                src="https://via.placeholder.com/500x350"
+                alt="Ink Apps Team in Hobart"
+                data-aos="fade-right"
+            />
+            <div class="text" data-aos="fade-left">
+                <h2>About Ink Apps</h2>
+                <p>
+                    We are a small, passionate team based in Hobart, Tasmania,
+                    dedicated to building simple, reliable Shopify plugins that
+                    solve real e-commerce challenges. Our mission is to make
+                    integrations seamless and accessible for businesses of all
+                    sizes.
+                </p>
+            </div>
+        </section>
+
+        <section class="cta" id="contact" data-aos="fade-up">
+            <h2>Ready to Simplify Your Workflow?</h2>
+            <p>
+                Get in touch today to find the perfect integration for your
+                store!
+            </p>
+            <a href="mailto:inkapps.tom@gmail.com" class="btn">Contact Us</a>
+        </section>
+
+        <footer data-aos="fade-up">
+            &copy; 2025 Ink Apps • All Rights Reserved
+        </footer>
+
+        <!-- AOS Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                AOS.init({ duration: 800, once: true });
+            });
+        </script>
+    </body>
+</html>
