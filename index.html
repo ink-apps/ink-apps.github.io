@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ink Apps • Simplify Your Shopify Integrations</title>
         <!-- Favicon -->
-        <link rel="icon" href="mark.png" type="image/png" />
+        <link rel="icon" href="ink.apps mark.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -50,20 +50,21 @@
             }
 
             /* Header */
-            header {
+            header.container {
                 padding: 1rem 0;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
             .logo img {
-                max-height: 60px;
+                max-height: 80px;
             }
             nav ul {
                 display: flex;
-                gap: 1.5rem;
+                gap: 2rem;
             }
             nav a {
+                font-size: 1.1rem;
                 font-weight: 600;
                 color: #555;
                 transition: color 0.3s;
@@ -72,24 +73,43 @@
                 color: var(--brand-color);
             }
 
-            /* Hero */
+            /* Hero with Full-Width Background */
             .hero {
+                position: relative;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                min-height: 80vh;
+                min-height: 64vh; /* Reduced height by ~20% */
+                color: #fff;
+                background: url("hero-bg.jpg") no-repeat center/cover;
+            }
+            .hero::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 44, 69, 0.6);
+                z-index: 0;
+            }
+            .hero .container {
+                position: relative;
+                z-index: 1;
             }
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 3rem;
                 margin-bottom: 1rem;
-                color: var(--brand-color);
             }
             .hero p {
-                font-size: 1.125rem;
+                font-size: 1.25rem;
                 margin-bottom: 2rem;
                 max-width: 600px;
             }
+
+            /* Buttons */
             .btn {
                 display: inline-block;
                 background: var(--brand-color);
@@ -102,24 +122,91 @@
             .btn:hover {
                 background: var(--brand-dark);
             }
-
-            /* Features */
-            .features {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-                gap: 2rem;
-                margin: 4rem 0;
+            .learn-more {
+                display: inline-block;
+                margin-top: 1rem;
+                font-size: 0.9rem;
+                background: var(--brand-color);
+                color: #fff;
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                border: none;
+                transition: background 0.3s;
             }
-            .feature {
-                padding: 1.5rem;
-                border-radius: 8px;
+            .learn-more:hover {
+                background: var(--brand-dark);
+            }
+
+            /* Principles Intro */
+            .principles {
+                width: 100%;
                 background: #f9f9f9;
+            }
+            .principles .container {
+                padding: 4rem 0;
                 text-align: center;
             }
-            .feature h3 {
-                margin-bottom: 0.5rem;
-                font-size: 1.25rem;
+            .principles h2 {
+                font-size: 2rem;
                 color: var(--brand-color);
+                margin-bottom: 1rem;
+            }
+            .principles p {
+                font-size: 1.125rem;
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            /* Apps Section */
+            .apps {
+                width: 100%;
+            }
+            .apps .container {
+                padding: 4rem 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+                justify-content: center;
+            }
+            .app-card {
+                position: relative;
+                overflow: hidden;
+                padding: 1.5rem;
+                border-radius: 8px;
+                background: #fff;
+                text-align: center;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            }
+            .app-card h3 {
+                color: var(--brand-color);
+                margin-bottom: 0.5rem;
+                font-size: 1.5rem;
+            }
+            .app-card p {
+                margin-bottom: 1rem;
+            }
+            .app-card.xero::before,
+            .app-card.auspost::before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                width: 180px; /* Increased by 1.5x */
+                height: 180px; /* Increased by 1.5x */
+                background-repeat: no-repeat;
+                background-size: contain;
+                opacity: 0.1;
+                z-index: 0;
+            }
+            .app-card.xero::before {
+                background-image: url("xink-mark.png");
+            }
+            .app-card.auspost::before {
+                background-image: url("auspink-mark.png");
+            }
+            .app-card * {
+                position: relative;
+                z-index: 1;
             }
 
             /* About */
@@ -128,15 +215,16 @@
                 flex-wrap: wrap;
                 align-items: center;
                 gap: 2rem;
-                margin-bottom: 4rem;
+                padding: 2rem 0;
             }
-            .about img {
-                flex: 1 1 300px;
+            .about .illustration {
+                flex: 0 0 250px;
+            }
+            .about .illustration img {
                 max-width: 100%;
-                border-radius: 8px;
             }
             .about .text {
-                flex: 1 1 300px;
+                flex: 1;
             }
 
             /* CTA */
@@ -146,11 +234,12 @@
                 text-align: center;
                 padding: 3rem 1rem;
                 border-radius: 8px;
-                margin-bottom: 4rem;
             }
             .cta h2 {
                 font-size: 2rem;
-                margin-bottom: 1rem;
+            }
+            .cta .btn {
+                margin-top: 1rem;
             }
 
             /* Footer */
@@ -176,70 +265,83 @@
             </nav>
         </header>
 
-        <section class="container hero" id="hero">
-            <h1 data-aos="fade-right">Effortless Shopify Integrations</h1>
-            <p data-aos="fade-up">
-                Affordable, easy-to-use plugins connecting your store to Xero
-                and Australia Post, proudly made in Hobart, Tasmania.
-            </p>
-            <a href="#apps" class="btn" data-aos="zoom-in">Explore Our Apps</a>
-        </section>
-
-        <section class="container features" id="apps">
-            <div class="feature" data-aos="fade-up" data-aos-delay="100">
-                <h3>Xero Connector</h3>
-                <p>
-                    Sync orders, invoices and payments to Xero in real time—no
-                    manual exports required.
+        <!-- Hero Section Full-Width -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <h1 data-aos="fade-right">Effortless Shopify Integrations</h1>
+                <p data-aos="fade-up">
+                    Affordable, easy-to-use plugins connecting your store to
+                    Xero and Australia Post.
                 </p>
-            </div>
-            <div class="feature" data-aos="fade-up" data-aos-delay="200">
-                <h3>Australia Post Connector</h3>
-                <p>
-                    Automate label creation, shipping rates, and tracking
-                    updates directly through your store.
-                </p>
-            </div>
-            <div class="feature" data-aos="fade-up" data-aos-delay="300">
-                <h3>Simplicity at Its Core</h3>
-                <p>
-                    Install and configure in minutes with zero coding—designed
-                    for non-technical users.
-                </p>
-            </div>
-            <div class="feature" data-aos="fade-up" data-aos-delay="400">
-                <h3>Affordable Pricing</h3>
-                <p>
-                    Powerful tools with transparent plans that scale as your
-                    business grows.
-                </p>
+                <a href="#apps" class="btn" data-aos="zoom-in"
+                    >Explore Our Apps</a
+                >
             </div>
         </section>
 
+        <!-- Apps Details -->
+        <section class="apps" id="apps">
+            <div class="container">
+                <div
+                    class="app-card xero"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <h3>Xero Connector</h3>
+                    <p>
+                        Sync orders, invoices and payments to Xero in real time,
+                        no manual exports required.
+                    </p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div
+                    class="app-card auspost"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+                    <h3>Australia Post Connector</h3>
+                    <p>
+                        Easily exports orders from Shopify to Australia Post,
+                        built to work with every MyPost Business account.
+                    </p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Principles Intro -->
+        <section class="principles" id="principles" data-aos="fade-down">
+            <div class="container">
+                <h2>Our Guiding Principles</h2>
+                <p>
+                    We believe in simplicity, reliability, and affordability.
+                    Every plugin is crafted to be intuitive, robust, and
+                    cost-effective—so you can focus on the more exciting aspects
+                    of running your business.
+                </p>
+            </div>
+        </section>
+
+        <!-- About -->
         <section class="container about" id="about">
-            <img
-                src="https://via.placeholder.com/500x350"
-                alt="Ink Apps Team in Hobart"
-                data-aos="fade-right"
-            />
+            <div class="illustration" data-aos="fade-right">
+                <img src="tasmania.webp" alt="Tasmania Illustration" />
+            </div>
             <div class="text" data-aos="fade-left">
                 <h2>About Ink Apps</h2>
                 <p>
                     We are a small, passionate team based in Hobart, Tasmania,
-                    dedicated to building simple, reliable Shopify plugins that
-                    solve real e-commerce challenges. Our mission is to make
-                    integrations seamless and accessible for businesses of all
-                    sizes.
+                    with more than 20 years of experience building software for
+                    small and large businesses. We hope our apps help your
+                    business streamline your operations and simplify your
+                    Shopify lives.
                 </p>
             </div>
         </section>
 
         <section class="cta" id="contact" data-aos="fade-up">
             <h2>Ready to Simplify Your Workflow?</h2>
-            <p>
-                Get in touch today to find the perfect integration for your
-                store!
-            </p>
+            <p>Get in touch if you want to learn more!</p>
             <a href="mailto:inkapps.tom@gmail.com" class="btn">Contact Us</a>
         </section>
 
