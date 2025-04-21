@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>x.ink – Streamlined Xero Integration</title>
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
+    <body>
+        <header class="container" data-aos="fade-down">
+            <div class="logo">
+                <img src="../logo.png" alt="Ink Apps Logo" />
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#apps"
+                            >Our Apps
+                            <span style="font-size: 0.7em">&#9662;</span></a
+                        >
+                        <ul class="dropdown-menu">
+                            <li><a href="/auspink/">ausp.ink</a></li>
+                            <li><a href="/xink">x.ink</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section
+            class="hero"
+            style="
+                min-height: 50vh;
+                background: #002c45;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            "
+        >
+            <img
+                src="../xink-logo.png"
+                alt="x.ink Logo"
+                style="max-width: 300px; height: auto"
+            />
+        </section>
+
+        <section
+            class="container"
+            style="padding: 4rem 1rem; text-align: center"
+        >
+            <h2>Main Features</h2>
+            <div
+                style="
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 2rem;
+                    margin-top: 2rem;
+                "
+            >
+                <div>
+                    <h3>Seamless Xero Sync</h3>
+                    <p>
+                        Automatically sync your Shopify orders with Xero,
+                        eliminating manual data entry.
+                    </p>
+                </div>
+                <div>
+                    <h3>Accurate Tax Mapping</h3>
+                    <p>
+                        Configure your tax rates to map correctly between
+                        platforms.
+                    </p>
+                </div>
+                <div>
+                    <h3>Multi-currency Support</h3>
+                    <p>
+                        Handle international orders with built-in currency
+                        conversion support.
+                    </p>
+                </div>
+                <div>
+                    <h3>Error Handling</h3>
+                    <p>
+                        Smart alerts and logging to help you resolve sync issues
+                        quickly.
+                    </p>
+                </div>
+                <div>
+                    <h3>Custom Rules</h3>
+                    <p>
+                        Define rules for invoice generation and account mapping
+                        to fit your workflow.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="container"
+            style="padding: 4rem 1rem; background: #f9f9f9; text-align: center"
+        >
+            <h2>How to Get Started</h2>
+            <ol style="max-width: 700px; margin: 2rem auto; text-align: left">
+                <li>
+                    <strong>Install:</strong> Find x.ink in the Shopify App
+                    Store and click install.
+                </li>
+                <li>
+                    <strong>Connect:</strong> Authorize your Xero account
+                    securely.
+                </li>
+                <li>
+                    <strong>Configure:</strong> Set up your tax rules and
+                    invoice settings.
+                </li>
+                <li>
+                    <strong>Test:</strong> Try syncing a test order and check
+                    the results in Xero.
+                </li>
+                <li>
+                    <strong>Go Live:</strong> Activate auto-sync and let x.ink
+                    handle the rest!
+                </li>
+            </ol>
+        </section>
+
+        <footer data-aos="fade-up">
+            &copy; 2025 Ink Apps • All Rights Reserved
+        </footer>
+
+        <!-- AOS Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                AOS.init({ duration: 800, once: true });
+            });
+        </script>
+    </body>
+</html>
