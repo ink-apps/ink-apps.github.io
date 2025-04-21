@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            {{ page.title }}Ink Apps • Simplify Your Shopify Integrations
+        </title>
+        <!-- Favicon -->
+        <link rel="icon" href="/images/mark.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- AOS Animation Library -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/styles/styles.css" />
+    </head>
+    <body>
+        <header class="container" data-aos="fade-down">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Ink Apps Logo" />
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#apps"
+                            >Our Apps
+                            <span style="font-size: 0.7em">&#9662;</span></a
+                        >
+                        <ul class="dropdown-menu">
+                            <li><a href="/auspink/">ausp.ink</a></li>
+                            <li><a href="/xink">x.ink</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        {{ content }}
+
+        <footer data-aos="fade-up">
+            &copy; 2025 Ink Apps • All Rights Reserved
+        </footer>
+
+        <!-- AOS Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                AOS.init({ duration: 800, once: true });
+            });
+        </script>
+    </body>
+</html>

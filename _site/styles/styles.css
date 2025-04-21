@@ -111,7 +111,7 @@ nav a:hover {
     align-items: flex-start;
     min-height: 64vh; /* Reduced height by ~20% */
     color: #fff;
-    background: url("hero-bg.jpg") no-repeat center/cover;
+    background: url("/images/hero-bg.jpg") no-repeat center/cover;
 }
 .hero::after {
     content: "";
@@ -227,10 +227,10 @@ nav a:hover {
     z-index: 0;
 }
 .app-card.xero::before {
-    background-image: url("xink-mark.png");
+    background-image: url("/images/xink-mark.png");
 }
 .app-card.auspost::before {
-    background-image: url("auspink-mark.png");
+    background-image: url("/images/auspink-mark.png");
 }
 .app-card * {
     position: relative;
