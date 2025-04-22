@@ -3,90 +3,65 @@ title: x.ink • Streamlined Xero Integration • Ink Apps
 layout: default
 ---
 
-<section
-    class="hero"
-    style="
-        min-height: 50vh;
-        background: #002c45;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    "
->
-    <img
-        src="/images/xink-logo.png"
-        alt="x.ink Logo"
-        style="max-width: 300px; height: auto"
-    />
+<section class="xink-hero">
+    <img src="/images/xink-logo.png" alt="x.ink Logo" data-aos="fade-up" />
 </section>
 
-<section class="container" style="padding: 4rem 1rem; text-align: center">
-    <h2>Main Features</h2>
-    <div
-        style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        "
-    >
-        <div>
+<section class="features">
+    <h2 data-aos="fade-down">Main Features</h2>
+    <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
             <h3>Seamless Xero Sync</h3>
             <p>
-                Automatically sync your Shopify orders with Xero, eliminating
-                manual data entry.
+                Sync orders, invoices and payments to Xero in real time, no
+                manual exports required.
             </p>
         </div>
-        <div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
             <h3>Accurate Tax Mapping</h3>
             <p>Configure your tax rates to map correctly between platforms.</p>
         </div>
-        <div>
-            <h3>Multi-currency Support</h3>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Support for Discounts and Refunds</h3>
             <p>
-                Handle international orders with built-in currency conversion
-                support.
+                Handle discounts and refunds, ensuring your financial records
+                remain accurate.
             </p>
         </div>
-        <div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+            <h3>Payment Type Mapping</h3>
+            <p>Map and configure payment types to fit your Xero setup.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
             <h3>Error Handling</h3>
             <p>
                 Smart alerts and logging to help you resolve sync issues
                 quickly.
             </p>
         </div>
-        <div>
-            <h3>Custom Rules</h3>
-            <p>
-                Define rules for invoice generation and account mapping to fit
-                your workflow.
-            </p>
-        </div>
     </div>
 </section>
 
-<section
-    class="container"
-    style="padding: 4rem 1rem; background: #f9f9f9; text-align: center"
->
-    <h2>How to Get Started</h2>
-    <ol style="max-width: 700px; margin: 2rem auto; text-align: left">
-        <li>
+<section class="getting-started">
+    <h2 data-aos="fade-down">How to Get Started</h2>
+    <ol>
+        <li data-aos="fade-left" data-aos-delay="100">
             <strong>Install:</strong> Find x.ink in the Shopify App Store and
             click install.
         </li>
-        <li><strong>Connect:</strong> Authorize your Xero account securely.</li>
-        <li>
-            <strong>Configure:</strong> Set up your tax rules and invoice
-            settings.
+        <li data-aos="fade-left" data-aos-delay="200">
+            <strong>Connect:</strong> Authorize your Xero account securely.
         </li>
-        <li>
-            <strong>Test:</strong> Try syncing a test order and check the
-            results in Xero.
+        <li data-aos="fade-left" data-aos-delay="300">
+            <strong>Configure:</strong> Set up your tax rules and payment type
+            mappings.
         </li>
-        <li>
-            <strong>Go Live:</strong> Activate auto-sync and let x.ink handle
-            the rest!
+        <li data-aos="fade-left" data-aos-delay="400">
+            <strong>Go Live:</strong> Enable auto-sync and see your invoices
+            appear in Xero!
         </li>
     </ol>
+    <div class="cta-button" data-aos="fade-up" data-aos-delay="600">
+        <a href="/xink/getting-started" class="btn">Learn More</a>
+    </div>
 </section>

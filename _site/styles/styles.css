@@ -277,3 +277,90 @@ footer {
     font-size: 0.875rem;
     color: #777;
 }
+
+.xink-hero {
+    min-height: 50vh;
+    background: var(--brand-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xink-hero img {
+    max-width: 300px;
+    height: auto;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.features {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add a media query to ensure max 3 columns */
+@media (min-width: 1200px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.feature-card {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.getting-started {
+    padding: 4rem 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.getting-started ol {
+    max-width: 700px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.getting-started li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.getting-started .cta-button {
+    margin-top: 3rem;
+    text-align: center;
+}
