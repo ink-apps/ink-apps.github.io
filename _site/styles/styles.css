@@ -435,3 +435,9 @@ footer a:hover {
 .legal-section a:hover {
     opacity: 0.8;
 }
+
+.legal-section h3 {
+    color: var(--brand-color);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.2rem;
+}
