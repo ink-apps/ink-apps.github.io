@@ -375,6 +375,85 @@ footer a:hover {
     text-align: center;
 }
 
+/* Resources section on the app pages */
+.resource-links {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.resource-links h2 {
+    color: var(--brand-color);
+    margin-bottom: 2rem;
+}
+
+.resource-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.resource-card {
+    flex: 1;
+    max-width: 450px;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.resource-icon {
+    color: var(--brand-color);
+    margin-bottom: 1.5rem;
+}
+
+.resource-card h3 {
+    color: var(--brand-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.resource-card p {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.resource-link {
+    display: inline-block;
+    color: var(--brand-color);
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.resource-link:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .resource-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resource-card {
+        width: 100%;
+    }
+}
+
 /* Legal Pages Styling */
 .legal-header {
     background: var(--brand-color);
@@ -442,6 +521,63 @@ footer a:hover {
     font-size: 1.2rem;
 }
 
+/* Enhanced Xink Hero with Title Support */
+.xink-hero-with-title {
+    min-height: 40vh;
+    background: var(--brand-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.xink-hero-with-title img {
+    max-width: 200px;
+    height: auto;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.xink-hero-with-title h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards 0.1s;
+}
+
+.xink-hero-with-title p {
+    color: white;
+    opacity: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards 0.2s;
+}
+
+@media (max-width: 768px) {
+    .xink-hero-with-title {
+        min-height: 30vh;
+        padding: 3rem 1rem;
+    }
+
+    .xink-hero-with-title h1 {
+        font-size: 2rem;
+    }
+
+    .xink-hero-with-title p {
+        font-size: 1rem;
+    }
+}
+
+/* Getting Started guide */
 .guide-step {
     margin-bottom: 3rem;
     border-radius: 8px;
