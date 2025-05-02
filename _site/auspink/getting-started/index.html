@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-            Getting Started • x.ink • Ink AppsInk Apps • Simplify Your Shopify Integrations
+            Getting Started • ausp.ink • Ink AppsInk Apps • Simplify Your Shopify Integrations
         </title>
         <!-- Favicon -->
         <link rel="icon" href="/images/mark.png" type="image/png" />
@@ -44,9 +44,9 @@
         </header>
 
         <section class="xink-hero-with-title">
-    <img src="/images/xink-mark.png" alt="x.ink Logo" />
-    <h1>x.ink – Getting Started</h1>
-    <p>Follow these simple steps to connect your Shopify store to Xero</p>
+    <img src="/images/auspink-logo.png" alt="x.ink Logo" />
+    <h1>Getting Started</h1>
+    <p>Follow these simple steps to export Shopify orders to Australia Post</p>
 </section>
 
 <section class="getting-started-full">
@@ -55,18 +55,14 @@
         <div class="step-container">
             <div class="step-content" data-aos="fade-right">
                 <p>
-                    Find x.ink in the Shopify App Store and click install. The
+                    Find ausp.ink in the Shopify App Store and click install. The
                     app will request permissions to access your store data to
-                    facilitate the Xero integration.
-                </p>
-                <p>
-                    Once installed, you'll be taken to the x.ink dashboard where
-                    you can begin setting up your Xero connection.
+                    facilitate Australia Post exports.
                 </p>
             </div>
             <div class="step-image" data-aos="fade-left">
                 <img
-                    src="/images/xink-installation.png"
+                    src="/images/auspink-installation.png"
                     alt="Installation through Shopify App Store"
                 />
             </div>
@@ -74,22 +70,21 @@
     </div>
 
     <div class="guide-step" data-aos="fade-up">
-        <h3 data-aos="fade-right">2. Connect to Xero</h3>
+        <h3 data-aos="fade-right">2. Configuration</h3>
         <div class="step-container">
             <div class="step-content" data-aos="fade-right">
                 <p>
-                    Click on the "Connect" button on the page. You'll be
-                    redirected to Xero's authentication page where you'll need
-                    to log in and authorize x.ink to access your Xero account.
+                    Fill in the "Sender Details" section with your company's
+                    information. This includes your company name, address, and
+                    contact details.
                 </p>
                 <p>
-                    After authorization, you'll be returned to the x.ink
-                    dashboard with your Xero account successfully connected.
+                    This information will be used in Australia Post to generate shipping labels.
                 </p>
             </div>
             <div class="step-image" data-aos="fade-left">
                 <img
-                    src="/images/xink-xero-connect.png"
+                    src="/images/auspink-settings.png"
                     alt="Connecting to Xero"
                 />
             </div>
@@ -97,28 +92,20 @@
     </div>
 
     <div class="guide-step" data-aos="fade-up">
-        <h3 data-aos="fade-right">3. Configure Account and Tax Settings</h3>
+        <h3 data-aos="fade-right">3. Configuration #2</h3>
         <div class="step-container">
             <div class="step-content" data-aos="fade-right">
                 <p>
-                    On the "Settings" page, you need to configure the account in
-                    Xero that should be used for invoices and payments.
-                </p>
-                <p>
-                    The first two dropdown are to select the sales account and
-                    the freight account. The accounts listed in the dropdown are
-                    pulled from Xero and represent what is currently configured
-                    in your Xero account.
-                </p>
-                <p>
-                    The next two dropdowns are to select the tax accounts, for
-                    taxable and tax free items. Once again, the tax types listed
-                    are pulled from your Xero account.
+                    You can also configure some aspects of the export / fulfillment process:
+                    <ul>
+                        <li>- Set a cut-off time after which orders are considered for Express shipping</li>
+                        <li>- Set whether customers are notified when their order is fulfilled</li>
+                    </ul>
                 </p>
             </div>
             <div class="step-image" data-aos="fade-left">
                 <img
-                    src="/images/xink-settings.png"
+                    src="/images/auspink-settings-2.png"
                     alt="Tax and account configuration"
                 />
             </div>
@@ -126,26 +113,20 @@
     </div>
 
     <div class="guide-step" data-aos="fade-up">
-        <h3 data-aos="fade-right">4. Map Payment Methods</h3>
+        <h3 data-aos="fade-right">4. Create Common Parcels</h3>
         <div class="step-container">
             <div class="step-content" data-aos="fade-right">
                 <p>
-                    Below account and tax settings, you'll find the section to
-                    configure how Shopify payment methods are mapped in Xero.
+                    To speed up the export process, you can create common parcels on the "Settings" page.
+                    This is helpful if you are commonly using the same size of parcels, e.g. when you're shipping your most popular products.
                 </p>
                 <p>
-                    For each payment method, select the corresponding Xero bank
-                    account where the payments should be recorded, the account fees should be recorded, as well as further settings to make sure payments are properly categorized and reconciled:
-                    <ul>
-                        <li><b>Sync With Xero?</b> Whether the Shopofy transaction should be recorded as a payment in Xero</li>
-                        <li><b>Mark Reconciled?</b> Whether the payment should be marked as reconciled in Xero on creation</li>
-                        <li><b>Create Manual Journal?</b> Whether a manual journal should be created to account for the transaction fees</li>
-                    </ul>
+                    Outside of the custom parcels you create on this screen, ausp.ink provides Australia Post's standard parcel sizes on the export creation screen.
                 </p>
             </div>
             <div class="step-image" data-aos="fade-left">
                 <img
-                    src="/images/xink-mappings.png"
+                    src="/images/auspink-parcels.png"
                     alt="Payment method mapping"
                 />
             </div>
@@ -153,48 +134,47 @@
     </div>
 
     <div class="guide-step" data-aos="fade-up">
-        <h3 data-aos="fade-right">5. Map Payment Methods #2</h3>
+        <h3 data-aos="fade-right">5. Create Export</h3>
         <div class="step-container">
             <div class="step-content" data-aos="fade-right">
                 <p>
-                    Depending on your store and offerings, you may need to map a
-                    few payment methods. If you accept payment methods that are not
-                    supported by x.ink, please <a href="mailto:inkapps.tom@gmail.com">send us a message</a>
-                    so we can add them.
+                    When you select one or more orders in the Shopify order list,
+                    you can customise the parcels to match what you'd like to import into Australia Post.
                 </p>
                 <p>
-                    Some helpful tips:
+                    You can:
                     <ul>
-                        <li><b>Zero Payment</b> Always configure a zero payment method to record transactions without payment</li>
-                        <li><b>Cash</b> If you accept cash payments, consider turning on the "Mark Reconciled" option</li>
-                        <li><b>Paypal</b> Depending on how you connect Paypal with Xero, you may not want to enable the "Sync With Xero" option</li>
+                        <li>- Choose Standard or Express</li>
+                        <li>- Select from one of Australia Post's standard parcels or custom parcels you have configured</li>
+                        <li>- Customise the dimensions and weight of the parcel if they don't match one of the pre-defined parcels</li>
                     </ul>
+                </p>
+                <p>
+                    After configuring, you can click "Create Export" which provides a file that can be imported directly into Australia Post.
                 </p>
             </div>
             <div class="step-image" data-aos="fade-left">
                 <img
-                    src="/images/xink-payment-types.png"
+                    src="/images/auspink-create-export.png"
                     alt="Payment method mapping"
                 />
             </div>
         </div>
     </div>
     <div class="guide-step" data-aos="fade-up">
-        <h3 data-aos="fade-right">6. Enable Auto Sync</h3>
+        <h3 data-aos="fade-right">6. Fulfill Orders</h3>
         <div class="step-container">
             <div class="step-content" data-aos="fade-right">
                 <p>
-                    Once all settings are configured, you cango to the top of the "Settings"
-                    page and enable Auto Sync.
+                    Once the shipping labels are generated within Australia Post and you have the tracking numbers, you can easily enter them on the fulfillment page.
                 </p>
                 <p>
-                    From then on, all orders and transactions that occur in Shopify will be
-                    automatically synced to Xero, according to the settings and mappings you have configured.
+                    The page allows you to fulfill all orders in the export in one single step.
                 </p>
             </div>
             <div class="step-image" data-aos="fade-left">
                 <img
-                    src="/images/xink-auto-sync.png"
+                    src="/images/auspink-fulfill.png"
                     alt="Enabling auto sync"
                 />
             </div>
